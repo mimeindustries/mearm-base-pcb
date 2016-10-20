@@ -1,0 +1,237 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:custom-symbols
+LIBS:ServoPCB-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X03 P2
+U 1 1 57D18276
+P 7275 1950
+F 0 "P2" H 7275 2150 50  0000 C CNN
+F 1 "BASE_SERVO" V 7375 1950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 7275 1950 50  0001 C CNN
+F 3 "" H 7275 1950 50  0000 C CNN
+F 4 "y" H 7275 1950 60  0001 C CNN "Required"
+	1    7275 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P3
+U 1 1 57D18342
+P 7275 2575
+F 0 "P3" H 7275 2775 50  0000 C CNN
+F 1 "LEFT_SERVO" V 7375 2575 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 7275 2575 50  0001 C CNN
+F 3 "" H 7275 2575 50  0000 C CNN
+F 4 "y" H 7275 2575 60  0001 C CNN "Required"
+	1    7275 2575
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P5
+U 1 1 57D18395
+P 7275 3800
+F 0 "P5" H 7275 4000 50  0000 C CNN
+F 1 "GRIP_SERVO" V 7375 3800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 7275 3800 50  0001 C CNN
+F 3 "" H 7275 3800 50  0000 C CNN
+F 4 "y" H 7275 3800 60  0001 C CNN "Required"
+	1    7275 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P4
+U 1 1 57D183E0
+P 7275 3175
+F 0 "P4" H 7275 3375 50  0000 C CNN
+F 1 "RIGHT_SERVO" V 7375 3175 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 7275 3175 50  0001 C CNN
+F 3 "" H 7275 3175 50  0000 C CNN
+F 4 "y" H 7275 3175 60  0001 C CNN "Required"
+	1    7275 3175
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X03 P1
+U 1 1 57D1847B
+P 5750 2850
+F 0 "P1" H 5750 3050 50  0000 C CNN
+F 1 "CONNECTOR" H 5750 2650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 5750 1650 50  0001 C CNN
+F 3 "" H 5750 1650 50  0000 C CNN
+F 4 "y" H 5750 2850 60  0001 C CNN "Required"
+	1    5750 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 57D18668
+P 6775 4200
+F 0 "#PWR01" H 6775 3950 50  0001 C CNN
+F 1 "GND" H 6775 4050 50  0000 C CNN
+F 2 "" H 6775 4200 50  0000 C CNN
+F 3 "" H 6775 4200 50  0000 C CNN
+	1    6775 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR02
+U 1 1 57D18695
+P 6675 1625
+F 0 "#PWR02" H 6675 1475 50  0001 C CNN
+F 1 "VCC" H 6675 1775 50  0000 C CNN
+F 2 "" H 6675 1625 50  0000 C CNN
+F 3 "" H 6675 1625 50  0000 C CNN
+	1    6675 1625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6675 1625 6675 3800
+Wire Wire Line
+	6675 3800 7075 3800
+Wire Wire Line
+	7075 3175 6675 3175
+Connection ~ 6675 3175
+Wire Wire Line
+	6000 2575 7075 2575
+Connection ~ 6675 2575
+Wire Wire Line
+	7075 1950 6675 1950
+Connection ~ 6675 1950
+Wire Wire Line
+	7075 1850 6775 1850
+Wire Wire Line
+	6775 1850 6775 4200
+Wire Wire Line
+	5425 2475 7075 2475
+Connection ~ 6775 2475
+Wire Wire Line
+	7075 3075 6775 3075
+Connection ~ 6775 3075
+Wire Wire Line
+	7075 3700 6775 3700
+Connection ~ 6775 3700
+Wire Wire Line
+	5500 2750 5425 2750
+Wire Wire Line
+	5425 2750 5425 2475
+Wire Wire Line
+	6000 2750 6000 2575
+Wire Wire Line
+	5500 2850 5325 2850
+Wire Wire Line
+	5325 2850 5325 2050
+Wire Wire Line
+	5325 2050 7075 2050
+Wire Wire Line
+	6000 2850 6325 2850
+Wire Wire Line
+	6325 2850 6325 2675
+Wire Wire Line
+	6325 2675 7075 2675
+Wire Wire Line
+	5500 2950 5425 2950
+Wire Wire Line
+	5425 2950 5425 3275
+Wire Wire Line
+	5425 3275 7075 3275
+Wire Wire Line
+	6000 2950 6325 2950
+Wire Wire Line
+	6325 2950 6325 3900
+Wire Wire Line
+	6325 3900 7075 3900
+$Comp
+L CP C1
+U 1 1 57D1865B
+P 6350 2250
+F 0 "C1" H 6375 2350 50  0000 L CNN
+F 1 "CP" H 6375 2150 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D7.5_L11.2_P2.5" H 6388 2100 50  0001 C CNN
+F 3 "" H 6350 2250 50  0000 C CNN
+	1    6350 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 2250 6675 2250
+Connection ~ 6675 2250
+Wire Wire Line
+	6200 2250 6075 2250
+Wire Wire Line
+	6075 2250 6075 2475
+Connection ~ 6075 2475
+$Comp
+L LOGO ART2
+U 1 1 57D29519
+P 6200 7225
+F 0 "ART2" H 6200 7475 60  0001 C CNN
+F 1 "LOGO" H 6200 7075 60  0001 C CNN
+F 2 "Custom:MIME_LOGO" H 6200 7225 60  0001 C CNN
+F 3 "" H 6200 7225 60  0000 C CNN
+	1    6200 7225
+	1    0    0    -1  
+$EndComp
+$Comp
+L OSHW-LOGO ART1
+U 1 1 57D29545
+P 5100 7175
+F 0 "ART1" H 5100 7350 60  0001 C CNN
+F 1 "OSHW-LOGO" H 5100 7000 60  0001 C CNN
+F 2 "Custom:OSHW_LOGO" H 5100 7175 60  0001 C CNN
+F 3 "" H 5100 7175 60  0000 C CNN
+	1    5100 7175
+	1    0    0    -1  
+$EndComp
+$Comp
+L LOGO ART3
+U 1 1 57D2A50B
+P 3600 7250
+F 0 "ART3" H 3600 7500 60  0001 C CNN
+F 1 "LOGO" H 3600 7100 60  0001 C CNN
+F 2 "Custom:MEARM_LOGO" H 3600 7250 60  0001 C CNN
+F 3 "" H 3600 7250 60  0000 C CNN
+	1    3600 7250
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
